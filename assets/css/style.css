@@ -452,6 +452,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+
+#about:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -465,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -537,6 +550,20 @@ h1, h2, h3, h4, h5, h6 {
 #hero .btn-watch-video:hover i {
   color: #3b8af2;
 }
+.money{
+  font-size: 40px;
+  font-weight: 550;
+}
+
+.money2{
+  font-size: 22px;
+  style="color: darkred; 
+}
+
+
+.money-container{
+    margin-top: -4%
+  }
 
 @media (min-width: 1024px) {
   #hero {
@@ -544,11 +571,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*@media (min-width: 400px) {
-  #logo {
-    padding-right: 250px;
+@media (max-width: 768px) {
+  .mylogo {
+    display: none;
   }
-}*/
+}
 
 
 @media (max-width: 768px) {
@@ -567,24 +594,104 @@ h1, h2, h3, h4, h5, h6 {
   #hero h3{
     font-size: 16px;
     line-height: 18px;
-    margin-top: 70px;
+    margin-top: 5px;
 
 
   }
   #hero a span {
-    font-size: 12px;
+    font-size: 48px;
+    font-weight: 600;
   }
 
 
 
   #hero .btn-get-started, #hero .btn-watch-video {
     font-size: 13px;
-    margin-top: 40px;
+    margin-top: 5px;
   }
 }
 
 @media (max-height: 500px) {
   #hero {
+    height: 120vh;
+  }
+
+}
+
+@media (max-height: 500px) {
+  #contact {
+    height: 180vh;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+  
+}
+
+@media (min-width: 400px) {
+  #logo {
+    padding-right: 250px;
+  }
+}
+
+@media(max-width: 768px){
+  .money-container{
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .money{
+    font-size: 1.3rem !important;
+
+  }
+  .money2{
+    font-size: 0.9rem !important;
+  }
+  #contact {
+    height: 100vh;
+  }
+  #contact h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #contact h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #contact h3{
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 70px;
+
+
+  }
+  #contact a span {
+    font-size: 12px;
+  }
+/*.outer-list{
+  list-style-type: circle;margin-left: 20px;
+}
+
+.inner-list{
+  margin-left: 10px;
+}*/
+
+}
+
+@media (max-height: 500px) {
+  #contact {
+    height: 120vh;
+  }
+}
+
+@media (max-height: 500px) {
+  #contact {
     height: 120vh;
   }
 }
@@ -966,7 +1073,7 @@ section {
 
 .services .icon-box:hover {
   border-color: #fff;
-  box-shadow: 0px 0 25px 0 rgba(16, 110, 234, 0.1);
+  box-shadow: 0px 0 25px 0 rgba(82, 179, 217, 0.4);
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover .icon i {
@@ -981,7 +1088,7 @@ section {
 # Testimonials
 --------------------------------------------------------------*/
 .testimonials {
-  padding: 80px 0;
+  padding: 10px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
@@ -999,7 +1106,7 @@ section {
 }
 
 .testimonials .section-header {
-  margin-bottom: 40px;
+  margin-bottom: 5px;
 }
 
 .testimonials .testimonial-item {
@@ -1211,6 +1318,14 @@ section {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
 }
+
+.portfolio-details .portfolio-info ::before{
+  content: "";
+  background: rgba(255, 255, 255, 0.6);
+
+}
+
+
 
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
@@ -1436,6 +1551,89 @@ section {
   color: #fff;
 }
 
+
+
+.portfolio-details .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.portfolio-details .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-details .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+
+#event {
+  width: 100%;
+  height: relative;
+/*  background: url("../img/hero-bg.jpg") top left;*/
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+#event:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.40);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+#event  h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  font-size: 24px;
+  color: black;
+}
+
+#event  ul {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+}
+
+#event ul li + li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+
+#event  ol {
+  padding: 0;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+  margin-left: 20px;
+}
+
+#event ol li + li {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1445,11 +1643,12 @@ section {
 /*  background: url("../img/hero-bg.jpg") top left;*/
   background-size: cover;
   position: relative;
+  background-repeat: no-repeat;
 }
 
 #faq:before {
   content: "";
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.25);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1527,7 +1726,7 @@ section {
 --------------------------------------------------------------*/
 #contact{
     width: 100%;
-  height: 100vh;
+  height: 88vh;
   background: url("../img/field.jpg") top left;
   background-size: cover;
   position: relative;
@@ -1535,7 +1734,7 @@ section {
 
 #contact:before {
   content: "";
-  background: rgba(255, 255, 255, 0.025);
+  background: rgba(255, 255, 255, 0.6);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1550,7 +1749,7 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.3);
+  box-shadow: 0 0 15px rgba(214, 215, 216, 0.3);
   padding: 20px 0 30px 0;
 }
 
@@ -1563,7 +1762,7 @@ section {
 }
 
 .contact .info-box h3 {
-  font-size: 20px;
+  font-size: 26px;
   color: #777777;
   font-weight: 700;
   margin: 10px 0;
@@ -1572,7 +1771,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
@@ -1681,7 +1880,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: #fff;
-  padding: 0 0 30px 0;
+  padding: 0 0 20px 0;
   color: #444444;
   font-size: 14px;
   background: #f1f6fe;
@@ -1739,7 +1938,7 @@ section {
 }
 
 #footer .footer-top {
-  padding: 8px 0 2px 0;
+  padding: 4px 0 2px 0;
   background: #fff;
 }
 
@@ -1749,7 +1948,7 @@ section {
 
 #footer .footer-top .footer-contact h3 {
   font-size: 24px;
-  margin: 0 0 15px 0;
+  margin: 0 0 2px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
@@ -1772,11 +1971,11 @@ section {
   font-weight: bold;
   color: #444444;
   position: relative;
-  padding-bottom: 12px;
+  padding-bottom: 0px;
 }
 
 #footer .footer-top .footer-links {
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 
 #footer .footer-top .footer-links ul {
@@ -1793,7 +1992,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul li {
-  padding: 10px 0;
+  padding: 3px 0;
   display: flex;
   align-items: center;
 }
