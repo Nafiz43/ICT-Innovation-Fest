@@ -575,6 +575,9 @@ h1, h2, h3, h4, h5, h6 {
   .mylogo {
     display: none;
   }
+  .money-container{
+    margin-top: 0%
+  }
 }
 
 
@@ -595,6 +598,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
     line-height: 18px;
     margin-top: 5px;
+    margin-bottom: 0px;
 
 
   }
@@ -700,7 +704,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 17px 0;
+  padding: 0px 0;
   overflow: hidden;
 }
 
@@ -1028,7 +1032,7 @@ section {
 .services .icon-box {
   text-align: center;
   border: 1px solid #e2eefd;
-  padding: 10px 5px;
+  padding: 5px 2px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -1043,7 +1047,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   transition: ease-in-out 0.3s;
 }
 
