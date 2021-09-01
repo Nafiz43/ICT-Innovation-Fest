@@ -622,11 +622,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-@media (max-height: 500px) {
+/*@media (max-height: 500px) {
   #contact {
     height: 180vh;
   }
-}
+}*/
 
 
 @media (min-width: 1024px) {
@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem !important;
   }
   #contact {
-    height: 110vh;
+    height: 180vh;
   }
   #contact h1 {
     font-size: 28px;
@@ -671,12 +671,15 @@ h1, h2, h3, h4, h5, h6 {
   #contact h3{
     font-size: 16px;
     line-height: 18px;
-    margin-top: 70px;
+    margin-top: 5px;
 
 
   }
   #contact a span {
     font-size: 12px;
+  }
+    #contact p {
+    font-size: 14px;
   }
 /*.outer-list{
   list-style-type: circle;margin-left: 20px;
@@ -688,11 +691,11 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-@media (max-height: 500px) {
+/*@media (max-height: 500px) {
   #contact {
     height: 180vh;
   }
-}
+}*/
 
 
 
@@ -1727,7 +1730,7 @@ section {
 --------------------------------------------------------------*/
 #contact{
     width: 100%;
-  height: 88vh;
+  height: 90vh;
   background: url("../img/field.jpg") top left;
   background-size: cover;
   position: relative;
@@ -1766,7 +1769,8 @@ section {
   font-size: 26px;
   color: #777777;
   font-weight: 700;
-  margin: 10px 0;
+  margin: 15px 0;
+  margin-top: 20px;
 }
 
 .contact .info-box p {
