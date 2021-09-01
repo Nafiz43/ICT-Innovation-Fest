@@ -657,7 +657,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem !important;
   }
   #contact {
-    height: 100vh;
+    height: 110vh;
   }
   #contact h1 {
     font-size: 28px;
@@ -690,15 +690,11 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-height: 500px) {
   #contact {
-    height: 120vh;
+    height: 180vh;
   }
 }
 
-@media (max-height: 500px) {
-  #contact {
-    height: 120vh;
-  }
-}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -715,6 +711,7 @@ section {
 .section-title {
   text-align: center;
   padding-bottom: 5px;
+
 }
 
 .section-title h2 {
