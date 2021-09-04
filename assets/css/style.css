@@ -1304,7 +1304,7 @@ section {
 # Portfolio Details
 --------------------------------------------------------------*/
 
-#portfolio-details:before {
+/*#portfolio-details:before {
   content: "";
   background: rgba(255, 255, 255, 0.45);
   position: absolute;
@@ -1315,7 +1315,7 @@ section {
   background-repeat: no-repeat; 
   background-size: cover;
 }
-
+*/
 
 
 .portfolio-details {
