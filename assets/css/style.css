@@ -161,11 +161,22 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   height: 76px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+#header:before{
+  content: "";
+  background: rgba(255, 255, 255, 0.40);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #header.fixed-top {
-  height: 100px;
+  height: 105px;
 }
 
 #header .logo {
@@ -1292,6 +1303,21 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+
+#portfolio-details:before {
+  content: "";
+  background: rgba(255, 255, 255, 0.45);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+
+
+
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1587,7 +1613,7 @@ section {
 
 #event:before {
   content: "";
-  background: rgba(255, 255, 255, 0.40);
+  background: rgba(255, 255, 255, 0.45);
   position: absolute;
   bottom: 0;
   top: 0;
